@@ -1,0 +1,173 @@
+/* Variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+
+:root {
+  --black: #171321;
+  --dkblue: #0d314b;
+  --dkgreen: #073802;
+  --lightblue: #3794d6;
+  --lightblue2: #2a71a3;
+  --plum: #4b0d49;
+  --hotmag: #ff17e4;
+  --magenta: #e310cb;
+  --aqua: #86fbfb;
+  --white: #f7f8fa;
+  --font-size: 1.5vw;
+  --mono: "Oxygen mono", monospace;
+  font-size: var(--font-size);
+  width: 100vw;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 30px;
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  padding: 0;
+  margin: 0;
+  top: 0;
+  width: 100%;
+  display: block;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  color: var(--aqua);
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+h1 {
+  color: #32c4c4;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  text-decoration: underline;
+  font-size: 4rem;
+}
+
+h2 {
+  color: #239191;
+  font-family: "Rubik", sans-serif;
+  font-size: 3rem;
+}
+
+a:hover {
+  color: var(--lightblue2);
+  text-decoration: none;
+}
+
+textarea {
+  background-color: var(--dkblue);
+  color: var(--white);
+  text-align: right;
+  font-family: "Rubik", sans-serif;
+  height: 40rem;
+  width: 40rem;
+  direction: rtl;
+  font-size: 3rem;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#clock {
+  font-family: "Share Tech Mono", monospace;
+  color: #ffffff;
+  text-align: center;
+  color: #daf6ff;
+  text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
+}
+
+#clock h2 {
+  text-shadow: none;
+}
+
+.time {
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 0.05em;
+  padding: 5px 0;
+  font-size: 12rem;
+}
+
+.date {
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 0.1em;
+  margin-bottom: 30px;
+  font-size: 3rem;
+}
+
+.go2top {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 50%;
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-weight: 1000;
+}
+
+.go2top:hover {
+  opacity: 70%;
+}
+
+@media (min-width: 550px) {
+}
+
+@media (min-width: 850px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .time {
+    font-size: 6rem;
+  }
+  .date {
+    font-size: 1.5rem;
+  }
+  textarea {
+    margin-top: 0;
+    height: 200px;
+    width: 800px;
+    font-size: 1.5rem;
+  }
+}
